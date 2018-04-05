@@ -4,6 +4,7 @@ mysql进阶学习，在node中封装mysql 启动初始化建表，后台检测 �
 ## 如何使用本项目
 
 ```js
+
  clone:https://github.com/qiuChengleiy/node-mysql-package.git
  
  淘宝镜像命令安装（推荐-速度很快，安装项目依赖不用等太久）
@@ -53,6 +54,7 @@ mysql安装 ：[ 下载地址 ](https://www.mysql.com/downloads/) （我用的�
 终端输入：
 
 ```js
+
   1| $ sudo service mysqld stop
   
   2| $ cd /usr/bin
@@ -141,6 +143,7 @@ mockjs (生成随机数据，拦截 Ajax 请求): [文档](http://mockjs.com)
 
 ### 服务启动文件 app.js
 ```js
+
 //app.js
 const Koa = require('koa');
 const app = new Koa();
@@ -245,6 +248,7 @@ module.exports = router;
 
 ### 数据模拟 ./dataBase/mock.js
 ```js
+
 //数据模拟 这里模仿list下id为1-10递增 其他相关API看官网文档（前边已经贴出）
 module.exports = () => {
 var Mock = require('mockjs');
@@ -260,6 +264,7 @@ console.log(JSON.stringify(data, null, 4));
 
 ### 数据库操作文件 ./util/db.js
 ```js
+
 //引入模块
 const mysql = require('mysql');
 
@@ -296,8 +301,10 @@ module.exports = {
 };
 ```
 
+
 ### 获取所有sql脚本内容 ../util/getSqlContent.js
 ```js
+
 const fs = require('fs');
 const getSqlMap = require('./getSql');
 
@@ -331,8 +338,11 @@ function getSqlContentMap () {
 module.exports = getSqlContentMap;
 ```
 
+
 ### 获取sql目录详情 ../util/getSql.js
+
 ```js
+
 const fs = require('fs');
 const ergodicFile = require('./ergodicFile');
 
@@ -356,7 +366,9 @@ module.exports = getSqlMap;
 ```
 
 ### 遍历目录操作 ../util/ergodicFile.js
+
 ```js
+
 const fs = require('fs');
 
 /**
@@ -385,6 +397,7 @@ const ergodicFile = function ( pathResolve, mime ){
 
 module.exports = ergodicFile;
 ```
+
 
 ### 入口文件 ./index.js
 ```js
@@ -432,8 +445,10 @@ const createAllTables = async () => {
 module.exports = createAllTables;
 ```
 
+
 ### sql脚本文件 ./sql/goods.sql
 ```sql
+
 CREATE TABLE   IF NOT EXISTS  `data` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` json DEFAULT NULL,
@@ -443,6 +458,7 @@ CREATE TABLE   IF NOT EXISTS  `data` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
+
 
 ### sql脚本文件 ./sql/user.sql
 ```sql
@@ -468,6 +484,7 @@ INSERT INTO `user` set email='xiaobing', password='123';
 
 ## 效果
 
+
 ### 执行脚本
 ```
 node server.js
@@ -479,11 +496,14 @@ cnpm run hot
 ```
 
 ### 最终显示
+
 #### 浏览器下显示
 ![mysql-init-result-01](db.jpg)
 
+
 #### 查看数据库写入数据 （可视化工具）
 ![mysql-init-result-01](sql.jpg)
+
 
 #### 终端显示
 ![mysql-init-result-01](terminal.jpg)
@@ -498,13 +518,18 @@ node-mysql( cnpm i --save-dev node-mysql ) [文档](https://www.npmjs.com/packag
 [es2017 新特性：async functions(异步函数)](http://www.css88.com/archives/7731)
 [koa2进阶学习](https://chenshenhai.github.io/koa2-note/)
 
+
+
 ### 如有错误 欢迎指正
 qq:1421546334
 email:qcl9701s666@163.com
 
+
+
 ### 敢于尝试的你 其实你已经进步了 
 
-#(^-^)
+
+(^-^)
 
 
 
