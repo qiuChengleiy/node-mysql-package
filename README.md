@@ -16,10 +16,10 @@ mysql进阶学习，在node中封装mysql 启动初始化建表，后台检测 �
  node app.js
  
  或者（我在package.json里配置了一个启动项，热编译node代码，可以实时刷新，错误检测,依赖supervisor插件）
- -"hot": "./node_modules/.bin/supervisor app.js"
+ "hot": "./node_modules/.bin/supervisor app.js"
  cnpm run hot 
  
- 在浏览器中查看 localhost:3000/  - 
+ 在浏览器中查看 localhost:3000/  
  测试接口 “/koa2” 
  成功客户端会返回 数据库user用户表的所有信息 
  终端返回
@@ -30,10 +30,10 @@ mysql进阶学习，在node中封装mysql 启动初始化建表，后台检测 �
  [SUCCESS] sql脚本文件: user.sql 第2条脚本 执行成功 O(∩_∩)O !
  [SUCCESS] sql脚本文件: user.sql 第3条脚本 执行成功 O(∩_∩)O !
  [SUCCESS] sql脚本文件: user.sql 第4条脚本 执行成功 O(∩_∩)O !
-sql脚本执行结束！
+ sql脚本执行结束！
 
- 失败请检查路由中sql语句是否正确（注意：DROP TABLE user是否被注释掉，该句会删掉user表），确保mysql服务启动端口号是否正确（默认端口3306）
- 
+ 失败请检查路由中sql语句是否正确（注意：DROP TABLE user是否被注释掉，该句会删掉user表）
+ 确保mysql服务启动端口号是否正确（默认端口3306）
  
 ```
 
