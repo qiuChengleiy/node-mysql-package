@@ -9,10 +9,6 @@ mysql安装 ：[ 下载地址 ](https://www.mysql.com/downloads/) （我用的�
 ### 安装mysql可能遇到的问题
 服务启动和配置: [ 参考 ](https://jingyan.baidu.com/article/e6c8503c51ee97e54e1a186d.html) 
 
-如果遇到这样的问题
-
-![Alt text](图片链接 "optional title")
-
 
 
 ## 前言
