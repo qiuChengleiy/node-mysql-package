@@ -512,11 +512,14 @@ cnpm run hot
 
 ### 相关资源分享
 mysql sql语句大全（很全） ： [前往](http://www.cnblogs.com/yunf/archive/2011/04/12/2013448.html)
+
 node-mysql( cnpm i --save-dev node-mysql ) [文档](https://www.npmjs.com/package/node-mysql)（只找到英文的-。-）
 
 ### 参考文献
 [node-mysql官方技术文档翻译-开源中国社区](https://www.oschina.net/translate/node-mysql-tutorial)
+
 [es2017 新特性：async functions(异步函数)](http://www.css88.com/archives/7731)
+
 [koa2进阶学习](https://chenshenhai.github.io/koa2-note/)
 
 
