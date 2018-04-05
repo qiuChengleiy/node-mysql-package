@@ -1,0 +1,24 @@
+{
+  "name": "websevice",
+  "version": "0.0.1",
+  "description": "a web service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hot": "./node_modules/.bin/supervisor app.js"
+  },
+  "keywords": [
+    "web",
+    "node"
+  ],
+  "author": "qiuchenglei",
+  "license": "ISC",
+  "devDependencies": {
+    "koa": "^2.5.0",
+    "koa-router": "^7.4.0",
+    "mockjs": "^1.0.1-beta3",
+    "mysql": "^2.15.0",
+    "node-mysql": "^0.4.2",
+    "supervisor": "^0.12.0"
+  }
+}
