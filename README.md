@@ -124,6 +124,7 @@ mockjs (生成随机数据，拦截 Ajax 请求): [文档](http://mockjs.com)
 ├── app.js # 服务启动文件
 ├── node_modules/ #模块文件
 ├── routes/ #路由管理
+    ├── router.js   # 子路由
 ├── static/ #静态文件存放
 ├── package.json #包文件信息
 ├── dataBase/ # 数据库
