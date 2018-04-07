@@ -280,21 +280,21 @@ const pool = mysql.createPool({
 
 //数据库操作接口封装
 let query = function( sql, value ) {
-	return new Promise(( resolve, reject ) => {
-		pool.getConnection(function( err, connection ) {
-			if( err ) {
-				reject( err )
-			} else {
-				connection.query( sql, value, ( err, rows ) => {
-					if ( err ) {
-						reject( err )
-					} else {
-						resolve( rows )
-					}
-				});
+    return new Promise(( resolve, reject ) => {
+      pool.getConnection(function( err, connection ) {
+ 	if( err ) {
+		reject( err )
+	} else {
+		connection.query( sql, value, ( err, rows ) => {
+		if ( err ) {
+			reject( err );
+		} else {
+			resolve( rows );
 			}
-		})
-	})
+		});
+	}
+      })
+    })
 };
 
 module.exports = {
@@ -488,7 +488,7 @@ INSERT INTO `user` set email='xiaobing', password='123';
 
 ### 执行脚本
 ```
-node server.js
+node app.js
 
 或者
 
